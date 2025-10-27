@@ -1,0 +1,41 @@
+{
+  "name": "linqchat-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "API e serviços do LinQChat integrados ao Firebase Firestore, Stripe e WhatsApp",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon --env-file .env server.js",
+    "start": "node server.js",
+    "cron": "node workers/cron-worker.js"
+  },
+  "dependencies": {
+    "@naanzitos/baileys-make-in-memory-store": "^1.0.6",
+    "@whiskeysockets/baileys": "^7.0.0-rc.6",
+    "axios": "^1.12.2",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.19.2",
+    "firebase": "^12.4.0",
+    "firebase-admin": "^12.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.0.0",
+    "node-cron": "^4.2.1",
+    "nodemailer": "^7.0.9",
+    "openai": "^6.7.0",
+    "puppeteer": "^24.26.0",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "socket.io": "^4.8.1",
+    "stripe": "^19.1.0",
+    "whatsapp-web.js": "^1.34.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

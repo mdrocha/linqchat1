@@ -1,0 +1,26 @@
+/* /src/styles/global.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background-color: #f9fafe;
+  color: #222;
+}
+
+a {
+  color: #0a57ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+}
